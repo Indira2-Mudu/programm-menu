@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Администраторы</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../index.css">
+</head>
+<body>
+<div class="container p-3">
+    <div class="block1 mb-2 bg-white text-dark mx-auto w-50 p-3 rounded row">
+        <span class="fw-bold"> Администраторы</span>
+        <div class="d-grid gap-2 col-12 mx-auto p-3">
+            <!--добавление-->
+            <div id="content">
+
+            </div>
+        </div>
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#add-modal">Добавить
+            </button>
+        </div>
+        <!--add-modal-->
+        <div class="modal fade" id="add-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="fw-bold">Администраторы</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="javascript:void(0)" id="add-form">
+                            <div class="mb-2 row g-3">
+                                <h6>Личные данные</h6>
+                                <div class="col-md-4">
+                                    <input type="text" name="name" class="form-control te-size mt-auto" id="name"
+                                           placeholder="Имя">
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" name="pin" class="form-control te-size mt-auto" id="pin"
+                                           placeholder="Пин код">
+                                </div>
+                                <div class="col-md-5">
+                                    <input type="text" name="phone" class="form-control te-size mt-auto" id="phone"
+                                           placeholder="Номер телефона">
+                                </div>
+                            </div>
+                            <input type="hidden" name="id" id="upd-id1">
+                            <div class="d-grid gap-2 col-6 mx-auto mb-2">
+                                <button type="button" class="btn btn-dark" id="add-btn" data-bs-toggle="modal">
+                                    Добавить
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="update-user-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Редактирование пользователя</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="update-form">
+                            <div class="mb-3">
+                                <label class="form-label">Имя</label>
+                                <input type="text" class="form-control" name="name" id="upd-name">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Номер телефона</label>
+                                <input type="text" class="form-control" name="phone" id="upd-phone">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Пин код</label>
+                                <input type="text" class="form-control" name="pin" id="upd-pin">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Логин</label>
+                                <input type="text" class="form-control" name="pin" id="upd-code">
+                            </div>
+                            <input type="hidden" name="id" id="upd-id">
+                            <button type="submit" class="btn btn-dark" id="update_btn">Сохранить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+<script src="../js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+
+body{
+	background-color: black;
+}
+
+.block2{
+	margin-top: 20px;
+	
+}
+
+.color{
+	background-color: #EAE5E5;
+}
+
+.t-size{
+	font: 8pt sans-serif;
+}
+
+.te-size{
+	font: 12pt sans-serif;
+}
+
+.dline{
+	line-height: 0.4em;
+}
+
+.input-auto{
+	width: 20px;
+	height: 20px;
+}
+
+.input-auto1{
+	width: 10px;
+	height: 10px;
+
+}
+
+.bakery{
+	width: 160px;
+	height: 180px;
+	margin: 3px;
+	padding: 1px;
+	border-radius: 15px;
+}
+
+.button{
+	height: 100px;
+}
+
+.image{
+	width: 140px;
+	height: 90px;
+	padding: 3px;
+}
+
+.btn-close{
+	width: 1px;
+	height: 1px;
+	padding: 0, auto;
+	
+}
+.close{
+	width: 20px;
+	padding-left: 90%;
+	
+}
+
+.p-1{
+	font: 6pt sans-serif;
+	text-align: center;
+	margin-bottom: 0px;
+
+}
+
+.update{
+	height: 20px;
+	width: 80px;
+	font: 6pt sans-serif;
+	text-align: center;
+	margin-bottom: 2px;
+}
+

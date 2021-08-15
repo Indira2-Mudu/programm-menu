@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Студенты</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="../index.css">
+</head>
+<body>
+	<div class="container p-3">
+		<div class="block1 mb-2 bg-white text-dark mx-auto w-50 p-3 rounded row">
+			<span class="fw-bold"> Студенты</span>
+			<div class="d-grid gap-2 col-12 mx-auto p-3">
+				<div class="rounded color d-flex align-items-stretch p-3 flex-wrap">
+					<div class="col">
+						<p class="t-size dline"><strong>Админ</strong> : Керимкулов Дастан</p>
+						<p class="t-size dline"><strong>Курс</strong> : Flutter</p>
+						<p class="t-size dline"><strong>Номер телефона</strong> : 0555 505 000</p>
+						<p class="t-size dline"><strong>Пин код</strong> : 0505</p>
+					</div>
+					<div class="d-flex flex-column align-items-stretch">
+						<div class="d-flex justify-content-end">
+							<input type="image" src="../image/Vector%20(1).png" alt="pen" class="input-auto" p-3></input>
+							<input type="image" src="../image/Vector.png" alt="rubbish" class="input-auto" p-3></input>
+						</div>
+						<div class="d-flex justify-content-start mt-4 me-5">
+							<p class="t-size dline"><strong>Логин</strong> : 0555 505 000</p>
+						</div>
+					</div>
+				</div>
+				<div class="rounded color d-flex align-items-stretch p-3 flex-wrap">
+					<div class="col">
+						<p class="t-size dline"><strong>Админ</strong> : Керимкулов Дастан</p>
+						<p class="t-size dline"><strong>Курс</strong> : Flutter</p>
+						<p class="t-size dline"><strong>Номер телефона</strong> : 0555 505 000</p>
+						<p class="t-size dline"><strong>Пин код</strong> : 0505</p>
+					</div>
+					<div class="d-flex flex-column align-items-stretch">
+						<div class="d-flex justify-content-end ">
+							<input type="image" src="../image/Vector%20(1).png" alt="pen" class="input-auto" p-3></input>
+							<input type="image" src="../image/Vector.png" alt="rubbish" class="input-auto" p-3></input>
+						</div>
+						<div class="d-flex justify-content-start mt-4 me-5">
+							<p class="t-size dline"><strong>Логин</strong> : 0555 505 000</p>
+						</div>
+					</div>
+				</div>
+				<div class="d-grid gap-2 col-6 mx-auto">
+					<button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#add-modal">Добавить</button>
+				</div>
+				<!--add-modal-->
+				<div class="modal fade" id="add-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<form id="add-form">
+									<div class="mb-2 row g-3" >
+										<h6 class="fw-bold">Студенты</h6>
+										<label for="text" class="form-label">Личные данные</label>
+										<div class="mb-2 col-md-4">
+											<input type="surname" class="form-control te-size mt-auto" id="surname" placeholder="Фамилия">
+										</div>
+										<div class="col-md-4">
+											<input type="name" class="form-control te-size mt-auto" id="name" placeholder="Имя">
+										</div>
+										<div class="col-md-4">
+											<input type="name" class="form-control te-size mt-auto" id="name" placeholder="Отчество">
+										</div>
+										<div class="col-md-4">
+											<input type="text" class="form-control te-size mt-auto" id="text" placeholder="Логин">
+										</div>
+										<div class="col-md-4">
+											<input type="password" class="form-control te-size mt-auto" id="password" placeholder="Пин код">
+										</div>
+										<div class="col-md-4">
+											<input type="tel" class="form-control te-size mt-auto" id="tel" placeholder="Номер телефона">
+										</div>
+										<div class="col-md-8">
+											<input type="email" class="form-control te-size mt-auto" id="email" placeholder="Email">
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="d-grid gap-2 col-6 mx-auto mb-2">
+								<button type="button" class="btn btn-dark" id="add-btn" data-bs-toggle="modal">Добавить</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="../js/bufet.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выпечка</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../index.css">
+</head>
+<body>
+<div>
+    <div class="container p-3">
+        <!--Modal-->
+        <div class="block2 mb-2 bg-white text-dark mx-auto w-50  rounded row justify-content-evenly">
+            <div id="content" class="block2 mb-2 bg-white text-dark rounded row d-flex justify-content-evenly">
+
+            </div>
+            <div class="button">
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#add-modal">
+                        Добавить
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!--add-modal-->
+        <div class="modal fade" id="add-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="javascript:void(0)" id="add-form">
+                            <div class="mb-2 row g-3">
+                                <h6 class="fw-bold">Выпечка</h6>
+                                <label for="text" class="form-label">Данные</label>
+                                <div class="mb-2 col-md-8">
+                                    <input name="name" type="text" class="form-control te-size mt-auto" id="text"
+                                           placeholder="название">
+                                </div>
+                                <div class="mb-2 col-md-4">
+                                    <input name="price" type="number" class="form-control te-size mt-auto" id="number"
+                                           placeholder="стоимость">
+                                </div>
+
+                                <div class="col-md-12">
+                                    <input name="picture" type="text" class="form-control te-size mt-auto" id="file"
+                                           placeholder="загрузите картинку">
+                                </div>
+                            </div>
+                            <div class="d-grid gap-2 col-6 mx-auto mb-2">
+                                <button type="button" class="btn btn-dark" id="add-btn" data-bs-toggle="modal">
+                                    Добавить
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- Modal -->
+<div class="modal fade" id="update-products-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Редактирование пользователя</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="update-form">
+                    <div class="mb-3">
+                        <label class="form-label">Название</label>
+                        <input type="text" class="form-control" name="name" id="upd-name">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Цена</label>
+                        <input type="text" class="form-control" name="price" id="upd-price">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Изображение</label>
+                        <input type="text" class="form-control" name="picture" id="upd-picture">
+                    </div>
+                    <input type="hidden" name="id" id="upd-id">
+                    <button type="submit" class="btn btn-dark" id="update_btn">Сохранить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+<script src="../js/bufet.js"></script>
+</body>
+</html>
+
